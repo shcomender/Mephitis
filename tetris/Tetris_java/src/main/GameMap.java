@@ -28,6 +28,19 @@ public class GameMap extends JPanel implements KeyListener{
 		ver_index=START_VER;
 	}
 	
+	private void move() {
+		// TODO Auto-generated method stub
+			ver_index++;
+			try {
+				Thread.sleep(100);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			System.out.println(ver_index);
+			
+	}
+
 	//将当前移动的方块的中心坐标和形状输入到地图并显示出来
 	public void changeMap(int[][] src,int hor_index,int ver_index) {
 		cur_Tetris=src;
