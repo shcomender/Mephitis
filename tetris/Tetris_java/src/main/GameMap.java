@@ -39,7 +39,7 @@ public class GameMap extends JPanel implements KeyListener{
 		this.setLayout(null);
 		hor_index=START_HOR;
 		ver_index=START_VER;
-		timer = new Timer(1000,this.TimeListener);
+		timer = new Timer(500,this.TimeListener);
 		timer.start();
 		tp = new TerisType();
 		cur_Tetris=tp.getTetris();
@@ -66,15 +66,16 @@ public class GameMap extends JPanel implements KeyListener{
 				ver_index=START_VER;
 			}
 			//方块自行下移
-			if(ver_index<23) {
+			if(ver_index<25) {
 				ver_index++;
 				if(!isOver(cur_Tetris, 1)) {
 					ver_index--;
 					putInMap(cur_Tetris);
 				}
+			//	System.out.println(Can_Move);
 			}
-			System.out.println(Can_Move);
 			repaint();
+			System.out.println(Can_Move+" "+ver_index);
 		}
 		//将当前方块加入背景数组
 		private void putInMap(int[][] cur_Tetris) {
@@ -134,14 +135,13 @@ public class GameMap extends JPanel implements KeyListener{
 	public void keyPressed(KeyEvent e) {
 		// TODO Auto-generated method stub
 		if(e.getKeyCode()==KeyEvent.VK_DOWN){
-			//向下移动的时候，需要将当前中心位置的上一层先全部置为0再向下
-		if(ver_index<=23)	
-			{ 
-				ver_index++;
-			if(isOver(cur_Tetris,1))
-				this.repaint();
+		//向下移动的时候，需要将当前中心位置的上一层先全部置为0再向下
+			ver_index++;
+			if(isOver(cur_Tetris,1)) {
+				//ver_index++;
+				repaint();
+			}
 			else ver_index--;
-          }
         }
 		if(e.getKeyCode()==KeyEvent.VK_RIGHT){
 			if(hor_index<13) {
@@ -152,17 +152,18 @@ public class GameMap extends JPanel implements KeyListener{
 			}
         }
 		if(e.getKeyCode()==KeyEvent.VK_LEFT){
-			if(hor_index>0)
-		        {	hor_index--;
-		        if(isOver(cur_Tetris,3))
-		            this.repaint();
-		        else hor_index++;
-	            }
+			hor_index--;
+			if(isOver(cur_Tetris, 3)) {
+				repaint();
+			}
+			else hor_index++;
+			
         }if(e.getKeyCode()==KeyEvent.VK_SPACE) {
         	int[][] temp = TerisType.ChangeList.get(cur_Tetris);
         	if(isOver(temp,4))cur_Tetris=temp;
         	this.repaint();
         }
+        
         	
 	}
 
@@ -181,30 +182,28 @@ public class GameMap extends JPanel implements KeyListener{
 	//边界检测
 	public boolean isOver(int[][] s,int x) {
 		boolean flag = true;
-		int dep=0,left=0,right=0;
+		int dep=0,left=0,right=0,k;
+		
 		for(int i=0;i<3;i++)
 			{
 			if(s[i][0]==1)left=1;
 			if(s[i][2]==1)right=1;
 			}
-		switch(x) {
-		case 1:
-			int k=0;
-			for(int i=0;i<3;i++) {
-				for(int j=0;j<3;j++) {
-					if(s[i][j]==1 && map[ ver_index+offest[k][1]] [ hor_index+offest[k][0] ]==1) {
-						flag=false;
-						Can_Move=false;
-					}
-						k++;
-				}
-			}		
-		break;
-		case 2:if(hor_index+right>13)flag = false;break;
-		case 3:if(hor_index-left<0)flag = false;break;
-		case 4:if(hor_index+right >13 || hor_index-left<0 || ver_index==24) flag = false;break;
+		//超过界限就直接不用判断
+		if(hor_index+right >13 || hor_index-left<0 || ver_index>24){ 
+			flag = false;
+			return flag;
 		}
-		System.out.println(dep+" "+flag);
+		//没有超限的进行碰撞判断
+		k=0;
+		for(int i=0;i<3;i++) {
+			for(int j=0;j<3;j++) {
+				if(s[i][j]==1 && map[ ver_index+offest[k][1]] [ hor_index+offest[k][0] ]==1) {
+					flag=false;
+				}
+					k++;
+			}
+		}
 		return flag;
 	}
 	

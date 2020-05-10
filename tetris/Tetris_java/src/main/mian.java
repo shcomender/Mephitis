@@ -20,11 +20,8 @@ public class mian{
 	private final static Tools tool = new Tools();			//工具类		
 	public static GameMap Game_Map;							//地图
 	public static int Hor_index,Ver_index;					//小方块相对于地图左上角位移量
-//	public final static int HOR_START=6,VER_START=1;
 	public static int[][] Next_Tetris;
 	public static int[][] Cur_Tetris;
-	
-	
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
