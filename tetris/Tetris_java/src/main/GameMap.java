@@ -59,6 +59,7 @@ public class GameMap extends JPanel implements KeyListener{
 			//判断当方块不能移动了，获取新方块，将当前绘图的样子加入背景数组
 			if(!Can_Move) {
 				putInMap(cur_Tetris);
+				isFilled(map);
 				cur_Tetris=next_Tetris;
 				next_Tetris=tp.getTetris();
 				Can_Move=true;
@@ -135,10 +136,8 @@ public class GameMap extends JPanel implements KeyListener{
 	public void keyPressed(KeyEvent e) {
 		// TODO Auto-generated method stub
 		if(e.getKeyCode()==KeyEvent.VK_DOWN){
-		//向下移动的时候，需要将当前中心位置的上一层先全部置为0再向下
 			ver_index++;
 			if(isOver(cur_Tetris,1)) {
-				//ver_index++;
 				repaint();
 			}
 			else ver_index--;
@@ -162,9 +161,7 @@ public class GameMap extends JPanel implements KeyListener{
         	int[][] temp = TerisType.ChangeList.get(cur_Tetris);
         	if(isOver(temp,4))cur_Tetris=temp;
         	this.repaint();
-        }
-        
-        	
+        }	
 	}
 
 	@Override
@@ -206,5 +203,23 @@ public class GameMap extends JPanel implements KeyListener{
 		}
 		return flag;
 	}
+	
+	//消除检测，积分累加
+	public void isFilled(int[][] s) {
+		boolean flag;
+		int i=-1;
+		while(ver_index+i<=24 && i<2) {
+			flag=true;
+			System.out.println(ver_index+i);
+			int[] temp = s[ver_index+i];
+			//因为temp[15]为0，所以要自己写一下遍历，遍历到14
+			for (int j : temp) {
+				if(j==0)flag=false;
+			}
+			if(flag)System.out.println("this lap is filled");
+			i++;
+		}
+	}
+	
 	
 }
