@@ -1,9 +1,9 @@
 package com.jijuwuhua.myblog.web;
 
+import com.jijuwuhua.myblog.handler.InternalServerException;
+import com.jijuwuhua.myblog.handler.NotFindException;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 /**
  * @author ：chenjiajun
@@ -19,10 +19,18 @@ public class controller {
     * @Author: chenjiajun
     * @Date: 2021/3/8
     */
-    @ResponseBody
-    @RequestMapping("/test")
+//    @ResponseBody
+    @GetMapping("/1")
     public String Test(){
-        int a = 10/0;
-        return "about";
+    //@PathVariable URL中接收参数
+//        try{
+//            int a = 10/0;
+//        }catch (Exception e){
+//            throw new InternalServerException("服务器内部错误");
+//        }
+//        String blog = null;
+//        if (blog == null)throw new NotFindException("博客不存在");
+//        System.out.println("-----------");
+        return "example";
     }
 }

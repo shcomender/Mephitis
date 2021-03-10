@@ -1,6 +1,7 @@
 spring:
   thymeleaf:
     mode: HTML
+    prefix: classpath:/templates/
 
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
@@ -19,6 +20,6 @@ logging:
   level:
     root: warn
     #日志输出滤过级别
-    com.jijuwuhua: debug
-    file: log/blog.log
+    com.jijuwuhua: info
+  file: log/blog.log
     #日志存放目录
