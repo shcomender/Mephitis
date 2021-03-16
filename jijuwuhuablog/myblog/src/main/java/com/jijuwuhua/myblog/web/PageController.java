@@ -1,6 +1,7 @@
 package com.jijuwuhua.myblog.web;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
 
 /**
  * @author ：chenjiajun
@@ -9,5 +10,10 @@ import org.springframework.stereotype.Controller;
  */
 @Controller
 public class PageController {
-
+    //20210316
+    //在没有完善其他的实体类和数据库的情况下，无法完成数据交互，只能暂时注册一个无数据交互的页面来检测框架
+    @GetMapping("/about")
+    public String homepage(){
+        return "about";
+    }
 }
