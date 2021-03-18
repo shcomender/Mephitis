@@ -16,4 +16,9 @@ public class PageController {
     public String homepage(){
         return "about";
     }
+
+    @GetMapping("/admin/index")
+    public String adminIndex(){
+        return "admin/index";
+    }
 }

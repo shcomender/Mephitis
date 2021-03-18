@@ -11,8 +11,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="HTML File" />
+        <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -32,16 +33,17 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/jijuwuhua/myblog/pojo" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.jijuwuhua.myblog.handler" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\27633\IdeaProjects\myblog\src\main\java\com\jijuwuhua\myblog\pojo" />
       <recent name="C:\Users\27633\IdeaProjects\myblog\src\main\resources" />
       <recent name="C:\Users\27633\IdeaProjects\myblog\src\main\resources\static" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.jijuwuhua.myblog.handler" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -90,6 +92,11 @@
       <workItem from="1615509370806" duration="956000" />
       <workItem from="1615714779180" duration="1190000" />
       <workItem from="1615821938099" duration="2679000" />
+      <workItem from="1615878573531" duration="6786000" />
+      <workItem from="1615891619803" duration="1238000" />
+      <workItem from="1615964350576" duration="5695000" />
+      <workItem from="1615983527052" duration="7760000" />
+      <workItem from="1616034499304" duration="1206000" />
     </task>
     <servers />
   </component>

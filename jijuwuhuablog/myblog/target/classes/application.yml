@@ -23,3 +23,4 @@ logging:
     com.jijuwuhua: info
   file: log/blog.log
     #日志存放目录
+
