@@ -21,4 +21,13 @@ public class PageController {
     public String adminIndex(){
         return "admin/index";
     }
+
+    @GetMapping("/admin/blogs")
+    public String blogs(){
+        return "admin/blogs";
+    }
+    @GetMapping("/admin/test")
+    public String test(){
+        return "admin/test";
+    }
 }
