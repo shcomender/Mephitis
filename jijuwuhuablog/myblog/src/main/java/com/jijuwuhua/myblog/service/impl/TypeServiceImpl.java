@@ -34,27 +34,39 @@ public class TypeServiceImpl implements TypeService {
         return typeRepository.findById(id).get();
     }
 
+    @Override
+    public Type getTypeByName(String name) {
+        return typeRepository.findByName(name);
+    }
+
     @Transactional
     @Override
     public Page<Type> listType(Pageable pageable) {
         return typeRepository.findAll(pageable);
     }
 
+    /**
+    * @Description: 更新user表信息
+    * @Param: [id, type]
+    * @return: com.jijuwuhua.myblog.pojo.Type
+    * @Author: chenjiajun
+    * @Date: 2021/3/21
+    */
     @Transactional
     @Override
     public Type updateType(Long id, Type type) {
         //先验证type的合法性，合法的话进行复制保存
         Type t = typeRepository.findById(id).get();
         if (t == null){
-            throw new NotFindException("不存在该id");
+            throw new NotFindException("不存在该类型，拒绝更新");
         }
         BeanUtils.copyProperties(type,t);
-        return null;
+        return typeRepository.save(t);
     }
 
     @Transactional
     @Override
     public void deleteType(Long id) {
-
+        typeRepository.deleteById(id);
     }
 }

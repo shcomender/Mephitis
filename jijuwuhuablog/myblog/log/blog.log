@@ -1,19 +1,51 @@
-2021-03-21 00:07:02.436  INFO 5460 --- [restartedMain] com.jijuwuhua.myblog.MyblogApplication   : Starting MyblogApplication on DESKTOP-OVCQRMN with PID 5460 (C:\Users\27633\IdeaProjects\myblog\target\classes started by Agent Chen in C:\Users\27633\IdeaProjects\myblog)
-2021-03-21 00:07:02.465  INFO 5460 --- [restartedMain] com.jijuwuhua.myblog.MyblogApplication   : No active profile set, falling back to default profiles: default
-2021-03-21 00:07:13.240  WARN 5460 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2021-03-21 00:07:15.846  INFO 5460 --- [restartedMain] com.jijuwuhua.myblog.MyblogApplication   : Started MyblogApplication in 14.442 seconds (JVM running for 17.677)
-2021-03-21 00:07:26.925  INFO 5460 --- [http-nio-8080-exec-1] com.jijuwuhua.myblog.aspect.LogAspect    : Request : RequestLog{Url='http://localhost:8080/admin/types;jsessionid=E4B71DD9CA6B375EEB40DAB2F84F626A', Ip='0:0:0:0:0:0:0:1', ClassMethond='com.jijuwuhua.myblog.web.TypeController.list', args=[Page request [number: 0, size 5, sort: id: DESC], {}]}
-2021-03-21 00:07:26.974  INFO 5460 --- [http-nio-8080-exec-1] com.jijuwuhua.myblog.aspect.LogAspect    : --------after------
-2021-03-21 00:07:26.975  INFO 5460 --- [http-nio-8080-exec-1] com.jijuwuhua.myblog.aspect.LogAspect    : ------Result : { }admin/types
-2021-03-21 00:08:59.077  INFO 5460 --- [http-nio-8080-exec-10] com.jijuwuhua.myblog.aspect.LogAspect    : Request : RequestLog{Url='http://localhost:8080/admin/types;jsessionid=E4B71DD9CA6B375EEB40DAB2F84F626A', Ip='0:0:0:0:0:0:0:1', ClassMethond='com.jijuwuhua.myblog.web.TypeController.list', args=[Page request [number: 0, size 5, sort: id: DESC], {}]}
-2021-03-21 00:08:59.098  INFO 5460 --- [http-nio-8080-exec-10] com.jijuwuhua.myblog.aspect.LogAspect    : --------after------
-2021-03-21 00:08:59.099  INFO 5460 --- [http-nio-8080-exec-10] com.jijuwuhua.myblog.aspect.LogAspect    : ------Result : { }admin/types
-2021-03-21 00:09:55.476  INFO 5460 --- [http-nio-8080-exec-1] com.jijuwuhua.myblog.aspect.LogAspect    : Request : RequestLog{Url='http://localhost:8080/admin/types;jsessionid=E4B71DD9CA6B375EEB40DAB2F84F626A', Ip='0:0:0:0:0:0:0:1', ClassMethond='com.jijuwuhua.myblog.web.TypeController.list', args=[Page request [number: 0, size 5, sort: id: DESC], {}]}
-2021-03-21 00:09:55.489  INFO 5460 --- [http-nio-8080-exec-1] com.jijuwuhua.myblog.aspect.LogAspect    : --------after------
-2021-03-21 00:09:55.489  INFO 5460 --- [http-nio-8080-exec-1] com.jijuwuhua.myblog.aspect.LogAspect    : ------Result : { }admin/types
-2021-03-21 00:09:57.270  INFO 5460 --- [http-nio-8080-exec-5] com.jijuwuhua.myblog.aspect.LogAspect    : Request : RequestLog{Url='http://localhost:8080/admin/types', Ip='0:0:0:0:0:0:0:1', ClassMethond='com.jijuwuhua.myblog.web.TypeController.list', args=[Page request [number: 1, size 5, sort: id: DESC], {}]}
-2021-03-21 00:09:57.275  INFO 5460 --- [http-nio-8080-exec-5] com.jijuwuhua.myblog.aspect.LogAspect    : --------after------
-2021-03-21 00:09:57.276  INFO 5460 --- [http-nio-8080-exec-5] com.jijuwuhua.myblog.aspect.LogAspect    : ------Result : { }admin/types
-2021-03-21 00:09:58.454  INFO 5460 --- [http-nio-8080-exec-3] com.jijuwuhua.myblog.aspect.LogAspect    : Request : RequestLog{Url='http://localhost:8080/admin/types', Ip='0:0:0:0:0:0:0:1', ClassMethond='com.jijuwuhua.myblog.web.TypeController.list', args=[Page request [number: 0, size 5, sort: id: DESC], {}]}
-2021-03-21 00:09:58.461  INFO 5460 --- [http-nio-8080-exec-3] com.jijuwuhua.myblog.aspect.LogAspect    : --------after------
-2021-03-21 00:09:58.462  INFO 5460 --- [http-nio-8080-exec-3] com.jijuwuhua.myblog.aspect.LogAspect    : ------Result : { }admin/types
+2021-03-22 16:15:00.354  INFO 1528 --- [restartedMain] com.jijuwuhua.myblog.MyblogApplication   : Starting MyblogApplication on DESKTOP-OVCQRMN with PID 1528 (C:\Users\27633\IdeaProjects\myblog\target\classes started by Agent Chen in C:\Users\27633\IdeaProjects\myblog)
+2021-03-22 16:15:00.367  INFO 1528 --- [restartedMain] com.jijuwuhua.myblog.MyblogApplication   : No active profile set, falling back to default profiles: default
+2021-03-22 16:15:09.563  WARN 1528 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-22 16:15:12.000  INFO 1528 --- [restartedMain] com.jijuwuhua.myblog.MyblogApplication   : Started MyblogApplication in 12.511 seconds (JVM running for 15.2)
+2021-03-22 16:15:55.640  INFO 1528 --- [http-nio-8080-exec-2] com.jijuwuhua.myblog.aspect.LogAspect    : Request : RequestLog{Url='http://localhost:8080/admin/types;jsessionid=1C85D89164FB54F930F4D68F6FEA81C9', Ip='0:0:0:0:0:0:0:1', ClassMethond='com.jijuwuhua.myblog.web.TypeController.list', args=[Page request [number: 0, size 5, sort: id: DESC], {}]}
+2021-03-22 16:15:55.711  INFO 1528 --- [http-nio-8080-exec-2] com.jijuwuhua.myblog.aspect.LogAspect    : --------after------
+2021-03-22 16:15:55.712  INFO 1528 --- [http-nio-8080-exec-2] com.jijuwuhua.myblog.aspect.LogAspect    : ------Result : { }admin/types
+2021-03-22 16:15:57.868  INFO 1528 --- [http-nio-8080-exec-3] com.jijuwuhua.myblog.aspect.LogAspect    : Request : RequestLog{Url='http://localhost:8080/admin/types/8/delete', Ip='0:0:0:0:0:0:0:1', ClassMethond='com.jijuwuhua.myblog.web.TypeController.delete', args=[8, {}]}
+2021-03-22 16:15:57.919  INFO 1528 --- [http-nio-8080-exec-3] com.jijuwuhua.myblog.aspect.LogAspect    : --------after------
+2021-03-22 16:15:57.920  INFO 1528 --- [http-nio-8080-exec-3] com.jijuwuhua.myblog.aspect.LogAspect    : ------Result : { }redirect:/admin/types
+2021-03-22 16:15:57.958  INFO 1528 --- [http-nio-8080-exec-4] com.jijuwuhua.myblog.aspect.LogAspect    : Request : RequestLog{Url='http://localhost:8080/admin/types', Ip='0:0:0:0:0:0:0:1', ClassMethond='com.jijuwuhua.myblog.web.TypeController.list', args=[Page request [number: 0, size 5, sort: id: DESC], {message=删除成功}]}
+2021-03-22 16:15:57.971  INFO 1528 --- [http-nio-8080-exec-4] com.jijuwuhua.myblog.aspect.LogAspect    : --------after------
+2021-03-22 16:15:57.971  INFO 1528 --- [http-nio-8080-exec-4] com.jijuwuhua.myblog.aspect.LogAspect    : ------Result : { }admin/types
+2021-03-22 16:16:02.869  INFO 1528 --- [http-nio-8080-exec-6] com.jijuwuhua.myblog.aspect.LogAspect    : Request : RequestLog{Url='http://localhost:8080/admin/types', Ip='0:0:0:0:0:0:0:1', ClassMethond='com.jijuwuhua.myblog.web.TypeController.list', args=[Page request [number: 0, size 5, sort: id: DESC], {}]}
+2021-03-22 16:16:02.877  INFO 1528 --- [http-nio-8080-exec-6] com.jijuwuhua.myblog.aspect.LogAspect    : --------after------
+2021-03-22 16:16:02.879  INFO 1528 --- [http-nio-8080-exec-6] com.jijuwuhua.myblog.aspect.LogAspect    : ------Result : { }admin/types
+2021-03-22 16:16:16.605  INFO 1528 --- [http-nio-8080-exec-8] com.jijuwuhua.myblog.aspect.LogAspect    : Request : RequestLog{Url='http://localhost:8080/admin/types', Ip='0:0:0:0:0:0:0:1', ClassMethond='com.jijuwuhua.myblog.web.TypeController.list', args=[Page request [number: 1, size 5, sort: id: DESC], {}]}
+2021-03-22 16:16:16.612  INFO 1528 --- [http-nio-8080-exec-8] com.jijuwuhua.myblog.aspect.LogAspect    : --------after------
+2021-03-22 16:16:16.613  INFO 1528 --- [http-nio-8080-exec-8] com.jijuwuhua.myblog.aspect.LogAspect    : ------Result : { }admin/types
+2021-03-22 16:16:18.872  INFO 1528 --- [http-nio-8080-exec-10] com.jijuwuhua.myblog.aspect.LogAspect    : Request : RequestLog{Url='http://localhost:8080/admin/types/2/delete', Ip='0:0:0:0:0:0:0:1', ClassMethond='com.jijuwuhua.myblog.web.TypeController.delete', args=[2, {}]}
+2021-03-22 16:16:18.880  INFO 1528 --- [http-nio-8080-exec-10] com.jijuwuhua.myblog.aspect.LogAspect    : --------after------
+2021-03-22 16:16:18.881  INFO 1528 --- [http-nio-8080-exec-10] com.jijuwuhua.myblog.aspect.LogAspect    : ------Result : { }redirect:/admin/types
+2021-03-22 16:16:18.887  INFO 1528 --- [http-nio-8080-exec-7] com.jijuwuhua.myblog.aspect.LogAspect    : Request : RequestLog{Url='http://localhost:8080/admin/types', Ip='0:0:0:0:0:0:0:1', ClassMethond='com.jijuwuhua.myblog.web.TypeController.list', args=[Page request [number: 0, size 5, sort: id: DESC], {message=删除成功}]}
+2021-03-22 16:16:18.894  INFO 1528 --- [http-nio-8080-exec-7] com.jijuwuhua.myblog.aspect.LogAspect    : --------after------
+2021-03-22 16:16:18.895  INFO 1528 --- [http-nio-8080-exec-7] com.jijuwuhua.myblog.aspect.LogAspect    : ------Result : { }admin/types
+2021-03-22 16:16:22.571  INFO 1528 --- [http-nio-8080-exec-9] com.jijuwuhua.myblog.aspect.LogAspect    : Request : RequestLog{Url='http://localhost:8080/admin/types', Ip='0:0:0:0:0:0:0:1', ClassMethond='com.jijuwuhua.myblog.web.TypeController.list', args=[Page request [number: 0, size 5, sort: id: DESC], {}]}
+2021-03-22 16:16:22.584  INFO 1528 --- [http-nio-8080-exec-9] com.jijuwuhua.myblog.aspect.LogAspect    : --------after------
+2021-03-22 16:16:22.585  INFO 1528 --- [http-nio-8080-exec-9] com.jijuwuhua.myblog.aspect.LogAspect    : ------Result : { }admin/types
+2021-03-22 16:35:28.018  INFO 11032 --- [restartedMain] com.jijuwuhua.myblog.MyblogApplication   : Starting MyblogApplication on DESKTOP-OVCQRMN with PID 11032 (C:\Users\27633\IdeaProjects\myblog\target\classes started by Agent Chen in C:\Users\27633\IdeaProjects\myblog)
+2021-03-22 16:35:28.020  INFO 11032 --- [restartedMain] com.jijuwuhua.myblog.MyblogApplication   : No active profile set, falling back to default profiles: default
+2021-03-22 16:35:36.808  WARN 11032 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-22 16:35:39.476  INFO 11032 --- [restartedMain] com.jijuwuhua.myblog.MyblogApplication   : Started MyblogApplication in 12.204 seconds (JVM running for 14.603)
+2021-03-22 16:35:57.123  INFO 11032 --- [http-nio-8080-exec-4] com.jijuwuhua.myblog.aspect.LogAspect    : Request : RequestLog{Url='http://localhost:8080/admin/types', Ip='0:0:0:0:0:0:0:1', ClassMethond='com.jijuwuhua.myblog.web.TypeController.list', args=[Page request [number: 0, size 5, sort: id: DESC], {}]}
+2021-03-22 16:35:57.177  INFO 11032 --- [http-nio-8080-exec-4] com.jijuwuhua.myblog.aspect.LogAspect    : --------after------
+2021-03-22 16:35:57.179  INFO 11032 --- [http-nio-8080-exec-4] com.jijuwuhua.myblog.aspect.LogAspect    : ------Result : { }admin/types
+2021-03-22 16:36:00.237  INFO 11032 --- [http-nio-8080-exec-5] com.jijuwuhua.myblog.aspect.LogAspect    : Request : RequestLog{Url='http://localhost:8080/admin/types/input', Ip='0:0:0:0:0:0:0:1', ClassMethond='com.jijuwuhua.myblog.web.TypeController.iput', args=[{}]}
+2021-03-22 16:36:00.239  INFO 11032 --- [http-nio-8080-exec-5] com.jijuwuhua.myblog.aspect.LogAspect    : --------after------
+2021-03-22 16:36:00.239  INFO 11032 --- [http-nio-8080-exec-5] com.jijuwuhua.myblog.aspect.LogAspect    : ------Result : { }admin/types-input
+2021-03-22 16:36:05.797  INFO 11032 --- [http-nio-8080-exec-6] com.jijuwuhua.myblog.aspect.LogAspect    : Request : RequestLog{Url='http://localhost:8080/admin/types', Ip='0:0:0:0:0:0:0:1', ClassMethond='com.jijuwuhua.myblog.web.TypeController.post', args=[Type{id=null, name='aS'}, org.springframework.validation.BeanPropertyBindingResult: 0 errors, {}]}
+2021-03-22 16:36:05.806  INFO 11032 --- [http-nio-8080-exec-6] com.jijuwuhua.myblog.aspect.LogAspect    : --------after------
+2021-03-22 16:36:05.807  INFO 11032 --- [http-nio-8080-exec-6] com.jijuwuhua.myblog.aspect.LogAspect    : ------Result : { }admin/types-input
+2021-03-22 16:51:01.283  INFO 15276 --- [restartedMain] com.jijuwuhua.myblog.MyblogApplication   : Starting MyblogApplication on DESKTOP-OVCQRMN with PID 15276 (C:\Users\27633\IdeaProjects\myblog\target\classes started by Agent Chen in C:\Users\27633\IdeaProjects\myblog)
+2021-03-22 16:51:01.287  INFO 15276 --- [restartedMain] com.jijuwuhua.myblog.MyblogApplication   : No active profile set, falling back to default profiles: default
+2021-03-22 16:51:10.578  WARN 15276 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-22 16:51:13.072  INFO 15276 --- [restartedMain] com.jijuwuhua.myblog.MyblogApplication   : Started MyblogApplication in 12.595 seconds (JVM running for 15.119)
+2021-03-22 16:51:24.629  INFO 15276 --- [http-nio-8080-exec-4] com.jijuwuhua.myblog.aspect.LogAspect    : Request : RequestLog{Url='http://localhost:8080/admin/types', Ip='127.0.0.1', ClassMethond='com.jijuwuhua.myblog.web.TypeController.list', args=[Page request [number: 0, size 5, sort: id: DESC], {}]}
+2021-03-22 16:51:24.692  INFO 15276 --- [http-nio-8080-exec-4] com.jijuwuhua.myblog.aspect.LogAspect    : --------after------
+2021-03-22 16:51:24.693  INFO 15276 --- [http-nio-8080-exec-4] com.jijuwuhua.myblog.aspect.LogAspect    : ------Result : { }admin/types
+2021-03-22 16:51:28.641  INFO 15276 --- [http-nio-8080-exec-5] com.jijuwuhua.myblog.aspect.LogAspect    : Request : RequestLog{Url='http://localhost:8080/admin/types/input', Ip='127.0.0.1', ClassMethond='com.jijuwuhua.myblog.web.TypeController.iput', args=[{}]}
+2021-03-22 16:51:28.643  INFO 15276 --- [http-nio-8080-exec-5] com.jijuwuhua.myblog.aspect.LogAspect    : --------after------
+2021-03-22 16:51:28.643  INFO 15276 --- [http-nio-8080-exec-5] com.jijuwuhua.myblog.aspect.LogAspect    : ------Result : { }admin/types-input

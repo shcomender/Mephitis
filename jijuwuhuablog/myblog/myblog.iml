@@ -107,5 +107,7 @@
     <orderEntry type="library" scope="TEST" name="Maven: org.springframework:spring-test:5.0.10.RELEASE" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.xmlunit:xmlunit-core:2.5.1" level="project" />
     <orderEntry type="library" name="Maven: org.aspectj:aspectjweaver:1.7.4" level="project" />
+    <orderEntry type="library" name="jquery" level="application" />
+    <orderEntry type="library" name="semantic" level="application" />
   </component>
 </module>
